@@ -1,0 +1,20 @@
+.NavContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #8ED081;
+  width: 180px;
+  padding: 12px;
+  justify-content: space-between;
+}
+
+.navItem {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #F8FFF4;
+  cursor: pointer;
+}
+
+.Extras {
+  margin-bottom: 36px;
+}
