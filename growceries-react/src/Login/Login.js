@@ -13,7 +13,7 @@ class Login extends React.Component {
             <p>Login</p>
             <input className="Login" type="text" placeholder="Email"></input>
             <input className="Login" type="text" placeholder="Password"></input>
-            <button onClick={this.props.handleLoginClick}>Check My Bread</button>
+            <button onClick={this.props.handleLoginClick}>Continue</button>
           </div>
         </header>
       </div>

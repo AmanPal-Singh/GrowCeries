@@ -13,7 +13,8 @@ class TimeInsights extends React.Component {
         <Navbar handleLogoutClick={this.props.handleLogoutClick}
           handleHomeMapClick={this.props.handleHomeMapClick}
           handleTimeInsightsClick={this.props.handleTimeInsightsClick}
-          handleProdInsightsClick={this.props.handleProdInsightsClick}/>
+          handleProdInsightsClick={this.props.handleProdInsightsClick}
+          handleCreditsClick={this.props.handleCreditsClick}/>
         <div className="HomeMap">
           <p>
             Time insights

@@ -3,6 +3,7 @@ import Login from './Login/Login.js';
 import HomeMap from './HomeMap/HomeMap.js';
 import TimeInsights from './TimeInsights/TimeInsights.js';
 import ProdInsights from './ProdInsights/ProdInsights.js';
+import Credits from './Credits/Credits.js';
 import './App.css';
 
 class App extends React.Component {
@@ -13,6 +14,7 @@ class App extends React.Component {
     this.handleHomeMapClick = this.handleHomeMapClick.bind(this);
     this.handleTimeInsightsClick = this.handleTimeInsightsClick.bind(this);
     this.handleProdInsightsClick = this.handleProdInsightsClick.bind(this);
+    this.handleCreditsClick = this.handleCreditsClick.bind(this);
     this.state = {screen: 'login'};
   }
 
@@ -36,34 +38,50 @@ class App extends React.Component {
     this.setState({screen: 'prodInsights'});
   }
 
+  handleCreditsClick() {
+    this.setState({screen: 'credits'});
+  }
+
   render() {
     if (this.state.screen === 'login') {
       return (
         <Login handleLoginClick={this.handleLoginClick}
           handleHomeMapClick={this.handleHomeMapClick}
           handleTimeInsightsClick={this.handleTimeInsightsClick}
-          handleProdInsightsClick={this.handleProdInsightsClick}/>
+          handleProdInsightsClick={this.handleProdInsightsClick}
+          handleCreditsClick={this.handleCreditsClick}/>
       );
     } else if (this.state.screen === 'homeMap') {
       return (
         <HomeMap handleLogoutClick={this.handleLogoutClick}
           handleHomeMapClick={this.handleHomeMapClick}
           handleTimeInsightsClick={this.handleTimeInsightsClick}
-          handleProdInsightsClick={this.handleProdInsightsClick}/>
+          handleProdInsightsClick={this.handleProdInsightsClick}
+          handleCreditsClick={this.handleCreditsClick}/>
       )
     } else if (this.state.screen === 'timeInsights') {
       return (
         <TimeInsights handleLogoutClick={this.handleLogoutClick}
           handleHomeMapClick={this.handleHomeMapClick}
           handleTimeInsightsClick={this.handleTimeInsightsClick}
-          handleProdInsightsClick={this.handleProdInsightsClick}/>
+          handleProdInsightsClick={this.handleProdInsightsClick}
+          handleCreditsClick={this.handleCreditsClick}/>
       )
     } else if (this.state.screen === 'prodInsights') {
       return (
         <ProdInsights handleLogoutClick={this.handleLogoutClick}
           handleHomeMapClick={this.handleHomeMapClick}
           handleTimeInsightsClick={this.handleTimeInsightsClick}
-          handleProdInsightsClick={this.handleProdInsightsClick}/>
+          handleProdInsightsClick={this.handleProdInsightsClick}
+          handleCreditsClick={this.handleCreditsClick}/>
+      )
+    } else if (this.state.screen === 'credits') {
+      return (
+        <Credits handleLogoutClick={this.handleLogoutClick}
+          handleHomeMapClick={this.handleHomeMapClick}
+          handleTimeInsightsClick={this.handleTimeInsightsClick}
+          handleProdInsightsClick={this.handleProdInsightsClick}
+          handleCreditsClick={this.handleCreditsClick}/>
       )
     }
   }

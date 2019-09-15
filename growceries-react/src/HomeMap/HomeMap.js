@@ -9,15 +9,16 @@ class HomeMap extends React.Component {
 
   render() {
     return (
-      <div className="HomeMapContainer">
+      <div className="HomeMapContainer" id="homeMap">
         <Navbar handleLogoutClick={this.props.handleLogoutClick}
           handleHomeMapClick={this.props.handleHomeMapClick}
           handleTimeInsightsClick={this.props.handleTimeInsightsClick}
-          handleProdInsightsClick={this.props.handleProdInsightsClick}/>
+          handleProdInsightsClick={this.props.handleProdInsightsClick}
+          handleCreditsClick={this.props.handleCreditsClick}/>
         <div className="HomeMap">
-          <p>
-            YA BREAD
-          </p>
+          <a href="https://spriyajain.github.io/tracking-api/" target="_none">
+            Map Of Current Carts
+          </a>
         </div>
       </div>
     );

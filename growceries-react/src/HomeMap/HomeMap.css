@@ -9,5 +9,11 @@
   align-items: center;
   background-color: #F8FFF4;
   min-height: 100vh;
-  width: calc(100vw);
+  width: 100vw;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  text-decoration: none;
 }
